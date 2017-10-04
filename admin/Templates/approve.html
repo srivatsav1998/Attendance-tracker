@@ -1,0 +1,47 @@
+<div class="container">
+  <div data-ng-controller="approveCtrl">
+    <br>
+    <div class="row">
+      <nav>
+        <div class="nav-wrapper teal lighten-2 ">
+          <form>
+            <div class="input-field">
+              <input id="search" type="search" required ng-model="search">
+              <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+              <i class="material-icons">close</i>
+            </div>
+          </form>
+        </div>
+      </nav>
+
+
+      <div class="row">
+        <div data-ng-repeat="stud in datas | filter : search ">
+          <div class="col s12 ">
+            <div class="card">
+              <div class="card-image">
+                <img src="https://myspace.com/common/images/user.png" height="200" width="30">
+
+
+              </div>
+              <div class="card-content">
+                <span class="card-title activator grey-text text-darken-4">{{stud.name}}<i class="material-icons right">more_vert</i></span>
+                <p><a href="#">{{stud.reg_no}}</a></p>
+              </div>
+			  <div class="card-action">
+				<input type="button" class="btn" data-ng-click="acceptData(stud)" value="Approve">
+				<input type="button" class="btn" data-ng-click="deleteData(stud)" value="Dis-approve">
+			  </div>
+              <div class="card-reveal">
+                <span class="card-title grey-text text-darken-4">{{stud.name}}<i class="material-icons right">close</i></span>
+                <p>
+                  Registration No : {{stud.reg_no}}<br> Branch : {{stud.branch}}<br> Year Of Join : {{stud.year_of_admission}}<br>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

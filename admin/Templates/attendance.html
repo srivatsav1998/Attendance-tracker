@@ -1,0 +1,44 @@
+<div ng-controller="myAttendance">
+    <div class="container">
+        <div class="row">
+            <div class="input-field col s4">
+            </div>
+            <div class="input-field col s4">
+                <i class="material-icons prefix">insert_invitation</i>
+                <input id="date" type="text" class="validate" ng-model="logindate">
+                <label for="date">DD-MM-YYYY</label>
+            </div>
+            <div class="input-field col s4">
+                <button class="btn waves-effect waves-light" type="submit" name="action" ng-click="dateSearch()">Search                       
+                </button>
+
+            </div>
+        </div>
+
+        <div class="row">
+            <div data-ng-repeat="stud in datas">
+                <div class="col s12 ">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="https://myspace.com/common/images/user.png" height="200" width="30">
+
+
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title activator grey-text text-darken-4">{{stud.name}}<i class="material-icons right">more_vert</i></span>
+                            <p><a href="#">{{stud.reg_no}}</a></p>
+                        </div>
+                        <div class="card-reveal">
+                            <span class="card-title grey-text text-darken-4">{{stud.name}}<i class="material-icons right">close</i></span>
+                            <p>
+                                Registration No : {{stud.reg_no}}<br> Branch : {{stud.branch}}<br> Year Of Join : {{stud.year_of_admission}}<br> Hours Worked : {{stud.hours_worked}}<br>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</div>

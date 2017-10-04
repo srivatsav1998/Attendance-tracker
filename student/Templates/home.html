@@ -1,0 +1,49 @@
+<div data-ng-controller="myCtrl">
+    <div class="container">
+        <h1 class="text-deep-purple darken-2s"> ABOUT <br>  </h1>
+        <center>
+            <div class="row">
+			<div data-ng-repeat="stud in mydata ">
+                <div class="col s12">
+                    <!-- Name : Naveen<br><br> User Name : Naveen Tata<br><br> Registration no : U4CSE16063<br><br> Number Of
+                    Hours Worked: 18 <br> <br> -->
+
+                    <table>
+                        <thead>
+                            <tr>
+
+                            </tr>
+                            <tr>
+
+                            </tr>
+                        </thead>
+
+                        <tbody class="blue-text text-darken-2">
+                            <tr>
+                                <td>Name : <br><br></td>
+                                <td>{{stud.name}}<br><br></td>
+
+                            </tr>
+                            <tr>
+                                <td>User Name : <br><br></td>
+                                <td>{{stud.user_name}}<br><br></td>
+
+                            </tr>
+                            <tr>
+                                <td>Registration no : <br><br></td>
+                                <td>{{stud.reg_no}}<br><br></td>
+
+                            </tr>
+                            <tr>
+                                <td>Number Of Hours Worked : <br><br><br></td>
+                                <td><span>{{ stud.hours_worked | date:"h:mm"}}</span><br> <br> <br></td>
+
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+            </div>
+    </div>
+    </center>
+</div>
