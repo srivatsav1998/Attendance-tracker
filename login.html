@@ -6,6 +6,7 @@ function getLocation() {
     if (navigator.geolocation) {
         navigator.geolocation.getCurrentPosition(showPosition);
     }else {
+      document.cookie = "location=no";
     }
 }
 function showPosition(position) {
@@ -13,8 +14,10 @@ function showPosition(position) {
   var2 = position.coords.longitude;
   if(var1>=9.093198 && var1<=9.094493 && var2<=76.492774 && var2 >=76.490824){
       console.log('namaste');
+      document.cookie = "location=yes";
   }else{
     //window.location="http://www.tutorialspoint.com";
+      document.cookie = "location=yes";
       console.log('redirecting');
       console.log(var1);
       console.log(var2);
@@ -35,7 +38,7 @@ function showPosition(position) {
 </head>
 <body onload="getLocation()">
   <div class="form">
-      
+
       <ul class="tab-group">
         <li class="tab active"><a href="#signup">Sign Up</a></li>
         <li class="tab "><a href="#login">Log In</a></li>
