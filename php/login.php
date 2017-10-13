@@ -22,7 +22,7 @@
             $time = date("Y-m-d H:i:s");
             $time_obj = new DateTime($time);
             $_SESSION["login_time"] = $time_obj;
-			$date = date("d-m-Y");
+						$date = date("d-m-Y");
 			if($username != "admin"){
 				$query = "INSERT into attendance (user_name, reg_no, login_date, login_time) VALUES ('$username','$roll_no','$date','$time')";
 				$success = $conn->query($query);
@@ -38,7 +38,7 @@
 			}
 		}
         else{
-        	echo "incorrect credentials! :(";
+        	echo "<script type='text/javascript'>alert('Incorrect Credentials or your account is in approval process'); window.location.href = '/login.html';</script>";
         }
 	}
 	else{

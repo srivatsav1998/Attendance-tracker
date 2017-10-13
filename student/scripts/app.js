@@ -52,6 +52,9 @@ app.config(function($routeProvider){
 	  .when('/attendance',{
 		  templateUrl: 'Templates/attendance.html'
 	  })
+    .when('/settings',{
+      templateUrl: 'Templates/settings.html'
+    })
       .otherwise('/');
 });
 
@@ -62,5 +65,3 @@ app.controller('MainController',function($scope,$location){
   }
 
 });
-
-

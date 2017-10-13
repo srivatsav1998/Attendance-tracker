@@ -78,11 +78,11 @@
         <!-- Dropdown Trigger -->
 
         <li>
-          <a class='dropdown-button btn' data-beloworigin="true" href='#' data-activates='dropdown1'>Hello {{mydata.name}}</a>
+          <a class='dropdown-button btn' data-beloworigin="true" href='#' data-activates='personalize'>Hello</a>
         </li>
-		<ul id='dropdown1' class='dropdown-content'>
+		<ul id='personalize' class='dropdown-content'>
 			<li><a href="backend/logout.php">Logout</a></li>
-			<li><a href="#!">Settings</a></li>
+			<li><a ng-click="routeTo('/settings')">Settings</a></li>
 		</ul>
 		<script>
 			$('.dropdown-button').dropdown({

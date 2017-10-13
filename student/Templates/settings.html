@@ -1,0 +1,32 @@
+<div class="container">
+  <div data-ng-controller="myCtrl">
+    <br>
+    <div class="row">
+      <form action="backend/settings.php" method="post"class="col s12" >
+        <div class="row">
+          <div class="input-field col s6">
+            <input id="current_password" name = "current_password" type="password" class="validate">
+            <label for="current_password">Current Password</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s6">
+            <input id="new_password" name = "new_password" type="password" class="validate">
+            <label for="new_password">New Password</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s6">
+            <input id="reenter_password" name = "reenter_password" type="password" class="validate">
+            <label for="reenter_password">Re-enter Password</label>
+          </div>
+        </div>
+        <center>
+            <div class='row'>
+                <button type='submit' name="submit" class='col s3 btn btn-small waves-effect indigo'>Submit</button>
+            </div>
+        </center>
+      </form>
+    </div>
+  </div>
+</div>
