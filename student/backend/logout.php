@@ -17,6 +17,7 @@
 	time_update();
 	setcookie('login',"",time()-3600,'/');
 	setcookie('password',"",time()-3600,'/');
+	setcookie('location',"",time()-3600.'/');
 	session_destroy();
 	header("location: /login.html");
 ?>
