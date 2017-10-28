@@ -1,4 +1,5 @@
 <?php
+	#Approve a student
     require 'connection.php';
     $conn = Connect();
     $data = json_decode(file_get_contents("php://input"));

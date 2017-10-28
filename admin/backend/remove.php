@@ -1,4 +1,5 @@
 <?php
+#This is used to remove a person from the list
 require 'connection.php';
 $conn = Connect();
 $data = json_decode(file_get_contents("php://input"));

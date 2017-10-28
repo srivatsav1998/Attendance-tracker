@@ -1,4 +1,5 @@
 <?php
+	#Returns a random number between 1111,9999
 	require 'connection.php';
 	$conn = Connect();
 	$rand = rand(1111,9999);
