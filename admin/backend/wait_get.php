@@ -1,4 +1,5 @@
 <?php
+#Returns the list of students waiting for approval
 require 'connection.php';
 $conn = Connect();
 $myquery = mysqli_query	($conn,"SELECT * FROM permanent_list WHERE approval = 1");

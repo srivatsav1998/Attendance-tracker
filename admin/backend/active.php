@@ -1,4 +1,5 @@
 <?php
+	#Returns the active list of active persons
 	require 'connection.php';
 	$conn = Connect();
 	$myquery = mysqli_query($conn,"SELECT * FROM attendance WHERE live = 1");
