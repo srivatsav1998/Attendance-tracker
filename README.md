@@ -1,5 +1,6 @@
 # Slac
 A website for slac community.
+Programe sasak language
 
 ## Prerequisites
 PHPMyAdmin
