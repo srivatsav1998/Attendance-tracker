@@ -1,5 +1,6 @@
 # Slac
 A website for slac community.
+What is slac...??
 
 ## Prerequisites
 PHPMyAdmin
