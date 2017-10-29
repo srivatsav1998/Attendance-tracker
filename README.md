@@ -1,5 +1,6 @@
 # Slac
-A website for slac community.
+A website for slac community. "Springvale Learning and Activities Centre (SLAC) is an Incorporated Association, Registered Charity and
+Registered Training Organisation."
 
 ## Prerequisites
 PHPMyAdmin
