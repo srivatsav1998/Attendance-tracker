@@ -3,7 +3,7 @@
 	function Connect(){
 	 $dbhost = "localhost";
 	 $dbuser = "root";
-	 $dbpass = "1998vatsav";
+	 $dbpass = "";
 	 $dbname = "slac";
 	 
 	 // Create connection
