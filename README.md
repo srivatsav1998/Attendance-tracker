@@ -1,5 +1,5 @@
 # Slac
-A website for slac community.
+A website for slac community. Slack is community for programing
 
 ## Prerequisites
 PHPMyAdmin
