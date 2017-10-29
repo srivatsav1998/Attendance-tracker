@@ -1,5 +1,5 @@
 # Slac
-A website for slac community.
+A website for slac community. "Slack is a cloud-based set of team collaboration tools and services, founded by Stewart Butterfield."
 
 ## Prerequisites
 PHPMyAdmin
