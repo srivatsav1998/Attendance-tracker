@@ -1,38 +1,48 @@
-<div class="container">
-  <div data-ng-controller="activeCtrl">
-    <br>
-    <div class="row">
-      <nav>
-        <div class="nav-wrapper teal lighten-2 ">
-          <form>
-            <div class="input-field">
-              <input id="search" type="search" required ng-model="search">
-              <label class="label-icon" for="search"><i class="material-icons">search</i></label>
-              <i class="material-icons">close</i>
-            </div>
-          </form>
-        </div>
-      </nav>
-
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Active</title>
+</head>
+<body>
+  <div class="container">
+    <div data-ng-controller="activeCtrl">
+      <br>
       <div class="row">
-        <div data-ng-repeat="stud in datas | filter : search ">
-          <div class="col s12 ">
-            <div class="card">
-              <div class="card-image">
-                <img src="https://myspace.com/common/images/user.png" height="200" width="30">
-
-
+        <nav>
+          <div class="nav-wrapper teal lighten-2 ">
+            <form>
+              <div class="input-field">
+                <input id="search" type="search" required ng-model="search">
+                <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+                <i class="material-icons">close</i>
               </div>
-              <div class="card-content">
-                <span class="card-title activator grey-text text-darken-4">{{stud.user_name}}<i class="material-icons right">more_vert</i></span>
-                <p><a href="#">{{stud.reg_no}}</a></p>
-              </div>
-              <div class="card-reveal">
-                <span class="card-title grey-text text-darken-4">{{stud.user_name}}<i class="material-icons right">close</i></span>
-                <p>
-                  Registration No : {{stud.reg_no}}<br> Login_time : {{stud.login_time}}<br>
-                </p>
+            </form>
+          </div>
+        </nav>
+  
+  
+        <div class="row">
+          <div data-ng-repeat="stud in datas | filter : search ">
+            <div class="col s12 ">
+              <div class="card">
+                <div class="card-image">
+                  <img src="https://myspace.com/common/images/user.png" height="200" width="30">
+  
+  
+                </div>
+                <div class="card-content">
+                  <span class="card-title activator grey-text text-darken-4">{{stud.user_name}}<i class="material-icons right">more_vert</i></span>
+                  <p><a href="#">{{stud.reg_no}}</a></p>
+                </div>
+                <div class="card-reveal">
+                  <span class="card-title grey-text text-darken-4">{{stud.user_name}}<i class="material-icons right">close</i></span>
+                  <p>
+                    Registration No : {{stud.reg_no}}<br> Login_time : {{stud.login_time}}<br>
+                  </p>
+                </div>
               </div>
             </div>
           </div>
@@ -40,4 +50,6 @@
       </div>
     </div>
   </div>
-</div>
+  
+</body>
+</html>
