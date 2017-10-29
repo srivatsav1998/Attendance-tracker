@@ -1,5 +1,6 @@
 # Slac
 A website for slac community.
+Study Programing Language
 
 ## Prerequisites
 PHPMyAdmin
