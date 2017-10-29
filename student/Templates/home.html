@@ -1,39 +1,54 @@
-<div data-ng-controller="myCtrl">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Home</title>
+</head>
+<body>
+  <div ng-controller="myAttendance">
     <div class="container">
-        <h1 class="text-deep-purple darken-2s"> ABOUT <br>  </h1>
-        <center>
-            <div class="row">
-			           <div data-ng-repeat="stud in mydata track by $index">
-                   <div class="col s12">
-                     <table>
-                       <thead>
-                            <tr>
-                            </tr>
-                            <tr>
-                            </tr>
-                      </thead>
-                      <tbody class="blue-text text-darken-2">
-                        <tr>
-                          <td>Name : <br><br></td>
-                          <td>{{stud.name}}<br><br></td>
-                        </tr>
-                        <tr>
-                          <td>User Name : <br><br></td>
-                          <td>{{stud.user_name}}<br><br></td>
-                        </tr>
-                        <tr>
-                          <td>Registration no : <br><br></td>
-                          <td>{{stud.reg_no}}<br><br></td>
-                        </tr>
-                        <tr>
-                          <td>Number Of Hours Worked : <br><br><br></td>
-                          <td><span>{{ stud.hours_worked | date:"h:mm"}}</span><br> <br> <br></td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </div>
+        <div class="row">
+            <div class="input-field col s4">
+            </div>
+            <div class="input-field col s4">
+                <i class="material-icons prefix">insert_invitation</i>
+                <input id="date" type="text" class="validate" ng-model="logindate">
+                <label for="date">DD-MM-YYYY</label>
+            </div>
+            <div class="input-field col s4">
+                <button class="btn waves-effect waves-light" type="submit" name="action" ng-click="dateSearch()">Search                       
+                </button>
+
+            </div>
+        </div>
+        <div class="row">
+            <div data-ng-repeat="stud in datas">
+                <div class="col s12 ">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="https://myspace.com/common/images/user.png" height="200" width="30">
+
+
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title activator grey-text text-darken-4">{{stud.name}}<i class="material-icons right">more_vert</i></span>
+                            <p><a href="#">{{stud.reg_no}}</a></p>
+                        </div>
+                        <div class="card-reveal">
+                            <span class="card-title grey-text text-darken-4">{{stud.name}}<i class="material-icons right">close</i></span>
+                            <p>
+                                Registration No : {{stud.reg_no}}<br> Branch : {{stud.branch}}<br> Year Of Join : {{stud.year_of_admission}}<br> Hours Worked : {{stud.hours_worked}}<br>
+                            </p>
+                        </div>
+                    </div>
                 </div>
-              </div>
-        </center>
+            </div>
+        </div>
+
+
     </div>
-  </div>
+</div>
+</body>
+</html>
