@@ -1,5 +1,5 @@
 # Slac
-A website for slac community.
+A website for slac community. "	Stanford Linear Accelerator Center"
 
 ## Prerequisites
 PHPMyAdmin

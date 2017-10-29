@@ -1,5 +1,9 @@
 <?php
-#Returns the active list of active persons
+//Returns the active list of active persons
+//This is Single Line Comment
+#This is Single Line Comment
+/* This is Multi Line Comment
+Yuhuu */
 	require 'connection.php';
 	$conn = Connect();
 	$myquery = mysqli_query($conn,"SELECT * FROM attendance WHERE live = 1");
