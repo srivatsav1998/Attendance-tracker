@@ -2,6 +2,9 @@
 A website for slac community.
 
 ## Prerequisites
+HTML
+CSS
+JavaScript
 PHPMyAdmin
 
 ## Procedure
