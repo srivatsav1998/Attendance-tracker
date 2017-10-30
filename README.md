@@ -12,3 +12,5 @@ $ git clone [ulr]
 example $ git clone https://github.com/alfatah1453/slac.git
 $ git status
 $ git push origin [branch]
+
+#bintanggggg
