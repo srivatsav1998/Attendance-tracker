@@ -12,3 +12,5 @@ There is no big procedure to get your hands on, just clone the repository and im
 
 ## Contribution
 Feel free to add any other functionalities or UI improvements which you feel necessary and good.
+
+##THANKS...
