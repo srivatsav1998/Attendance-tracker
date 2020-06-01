@@ -2,9 +2,9 @@
  
 	function Connect(){
 	 $dbhost = "localhost";
-	 $dbuser = "root";
-	 $dbpass = "1998vatsav";
-	 $dbname = "slac";
+	 $dbuser = "USERNAME";
+	 $dbpass = "PASSWORD";
+	 $dbname = "DB_NAME";
 	 
 	 // Create connection
 	 $conn = new mysqli($dbhost, $dbuser, $dbpass, $dbname) or die($conn->connect_error);
